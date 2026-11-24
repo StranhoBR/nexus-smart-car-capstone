@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Smart Car Support</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:40px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h1{
+color:#0f172a;
+}
+
+.notice{
+background:#eff6ff;
+padding:15px;
+border-left:4px solid #2563eb;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Nexus Smart Car Customer Support</h1>
+
+<p>
+Welcome to the Nexus Smart Car support portal.
+</p>
+
+<p>
+This AI voice assistant supports:
+</p>
+
+<ul>
+<li>Order Status</li>
+<li>Order Updates</li>
+<li>Order Cancellation</li>
+<li>Returns</li>
+<li>Issue Reporting</li>
+<li>Photo Upload</li>
+<li>Agent Escalation</li>
+</ul>
+
+<div class="notice">
+Click the phone button in the lower-right corner to start a voice conversation.
+</div>
+
+</div>
+
+<script src="https://github.com/Cognigy/click-to-call-widget/releases/latest/download/webRTCWidget.js"></script>
+
+<script>
+addEventListener("load", () => {
+if(window.initWebRTCWidget){
+window.initWebRTCWidget(
+"https://endpoint-trial.cognigy.ai/71353ebb29859224d71ba0b61b407e66f5807b2e1bad89062927e31cd6546866"
+);
+}
+});
+</script>
+
+</body>
+</html>
